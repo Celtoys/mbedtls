@@ -53,8 +53,6 @@
 
 #define TEST_HELPER_ASSERT(a) if( !( a ) )                          \
 {                                                                   \
-    mbedtls_fprintf( stderr, "Assertion Failed at %s:%d - %s\n",    \
-                             __FILE__, __LINE__, #a );              \
     mbedtls_exit( 1 );                                              \
 }
 
